@@ -3,8 +3,7 @@
 # CNER: Concept and Named Entity Recognition
 
 
-[![Conference]([https://img.shields.io/badge/EACL-2024-red](https://2024.naacl.org/assets/images/logos/acl-logo.png)
-](https://2024.naacl.org/)]
+[![Conference]([https://img.shields.io/badge/EACL-2024-red](https://2024.naacl.org/assets/images/logos/acl-logo.png)](https://2024.naacl.org/)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
 
 
