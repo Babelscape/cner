@@ -5,7 +5,7 @@
 
 [![Conference](https://2024.naacl.org/assets/images/logos/acl-logo.png)](https://2024.naacl.org/)
 [![License: CC BY-NC 4.0](https://img.shields.io/badge/License-CC%20BY--NC%204.0-green.svg)](https://creativecommons.org/licenses/by-nc/4.0/)
-
+[![Paper](https://img.shields.io/badge/Proc-EMNLP--Proceedings-red)](https://aclanthology.org/2021.findings-emnlp.215/?ref=https://githubhelp.com)
 
 </div>
 
