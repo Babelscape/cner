@@ -43,15 +43,15 @@ To evaluate a CNER model, it is possible to run the following:
 where `path_to_predictions` is a file with CNER prediction over the cner-gold dataset split.
 Supported formats: .jsonl
     ```
-sentence_id	tokens	c_vs_ne	predictions
-55705165.21	['Commander', 'Donald', 'S.', ... '.'] ['NE', 'NE', 'NE', ... 'O']	['B-PER', 'I-PER', ... 'O']
+{"sentence_id": "55705165.21", "tokens": ["Commander", "Donald", "S.", "Jones", ",", "who", "would", "later", "command", "the", "United", "States", "Third", "Fleet", ",", "piloted", "Helicopter", "66", "during", "its", "inaugural", "astronaut", "recovery", "mission", "following", "Apollo", "8", ",", "and", "again", "during", "the", "Apollo", "11", "recovery", "of", "command", "module", "Columbia", "."], "pos": ["PROPN", "PROPN", "PROPN", "PROPN", "PUNCT", "PRON", "AUX", "ADV", "VERB", "DET", "VERB", "PROPN", "ADJ", "PROPN", "PUNCT", "VERB", "PROPN", "NUM", "ADP", "PRON", "ADJ", "NOUN", "NOUN", "NOUN", "VERB", "PROPN", "NUM", "PUNCT", "CCONJ", "ADV", "ADP", "DET", "PROPN", "NUM", "NOUN", "ADP", "NOUN", "NOUN", "PROPN", "PUNCT"], "c_vs_ne": ["O", "NE", "NE", "NE", "O", "O", "O", "O", "O", "O", "NE", "NE", "NE", "NE", "O", "O", "NE", "NE", "O", "O", "O", "C", "C", "C", "O", "NE", "NE", "O", "O", "O", "O", "O", "NE", "NE", "C", "O", "C", "NE", "NE", "O"], "predictions": ["B-PER", "I-PER", "I-PER", "I-PER", "O", "O", "O", "O", "O", "O", "B-ORG", "I-ORG", "I-ORG", "I-ORG", "O", "O", "B-ARTIFACT", "I-ARTIFACT", "O", "O", "O", "B-PER", "B-EVENT", "I-EVENT", "O", "B-ARTIFACT", "I-ARTIFACT", "O", "O", "O", "O", "O", "B-ARTIFACT", "I-ARTIFACT", "I-ARTIFACT", "O", "B-STRUCT", "B-ARTIFACT", "B-LOC", "O"]}
+
     ```
     
 Supported formats: .tsv
-    ```
-sentence_id	tokens	c_vs_ne	predictions
-55705165.21	['Commander', 'Donald', 'S.', ... '.'] ['NE', 'NE', 'NE', ... 'O']	['B-PER', 'I-PER', ... 'O']
-    ```
+
+| Sentence_id | Tokens | predictions |
+| :------------- | -------------: | -------------: |
+| "123..."	| ['Commander', 'Donald', 'S.', ... '.'] | ['B-PER', 'I-PER', ... 'O'] |
 
 
 # Reproduce Paper Results
