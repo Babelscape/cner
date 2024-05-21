@@ -31,11 +31,20 @@ This repository contains the evaluation scripts to evaluate CNER models and the 
 
 
 # Evaluate CNER models
-Using the official data, it is possible to train a cner model on cner_output.jsonl are the official outputs of our cner system
-To produce CNER results, it is possible to run the following:
+Using the official data, it is possible to train a cner model on CNER-silver.
+
+To evaluate a CNER model, it is possible to run the following:
     ```
-    python scripts/evaluate.py
+    python scripts/evaluate.py --predictions_path path_to_predictions
+    
+    )
     ```
+    
+where `path_to_predictions` is a file with CNER prediction over the cner-gold dataset split.
+Supported formats: .jsonl
+
+Supported formats: .tsv
+
 # Reproduce Paper Results
 cner_output.jsonl are the official outputs of our cner system
 To produce CNER results, it is possible to run the following:
