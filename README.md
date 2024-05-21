@@ -36,15 +36,13 @@ Using the official data, it is possible to train a cner model on CNER-silver.
 To evaluate a CNER model, it is possible to run the following:
     ```
     python scripts/evaluate.py --predictions_path path_to_predictions
-    
-    )
     ```
     
 where `path_to_predictions` is a file with CNER prediction over the cner-gold dataset split.
+
 Supported formats: .jsonl
     ```
 {"sentence_id": "55705165.21", "tokens": ["Commander", ..., "."],  "predictions": ["B-PER", ... , "O"]}
- 
     ```
     
 Supported formats: .tsv
@@ -58,7 +56,7 @@ Supported formats: .tsv
 cner_output.jsonl are the official outputs of our cner system
 To produce CNER results, it is possible to run the following:
     ```
-    bash test.sh
+    python scripts/evaluate.py --predictions_path outputs/cner_output.jsonl
     ```
     
 
