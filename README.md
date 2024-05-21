@@ -42,8 +42,17 @@ To evaluate a CNER model, it is possible to run the following:
     
 where `path_to_predictions` is a file with CNER prediction over the cner-gold dataset split.
 Supported formats: .jsonl
-
+    ```
+sentence_id	tokens	c_vs_ne	predictions
+55705165.21	['Commander', 'Donald', 'S.', ... '.'] ['NE', 'NE', 'NE', ... 'O']	['B-PER', 'I-PER', ... 'O']
+    ```
+    
 Supported formats: .tsv
+    ```
+sentence_id	tokens	c_vs_ne	predictions
+55705165.21	['Commander', 'Donald', 'S.', ... '.'] ['NE', 'NE', 'NE', ... 'O']	['B-PER', 'I-PER', ... 'O']
+    ```
+
 
 # Reproduce Paper Results
 cner_output.jsonl are the official outputs of our cner system
