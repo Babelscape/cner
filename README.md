@@ -24,33 +24,24 @@ This work has been published at NAACL 2024 (main conference). If you use any par
       Fernàndez-Castro, Alberte  and
       Navigli, Roberto",}
 ```
-# 
-This repository contains-  The evaluation scripts to evaluate CNER models.
--  The log of our CNER system used to reproduce paper results.
-
-# Data
-
+# Description
+This repository contains the evaluation scripts to evaluate CNER models and the official outputs of the CNER system, which can be used to reproduce paper results. We also release:
+- Our silver training and gold evaluation data on [Huggingface](https://huggingface.co/Babelscape/cner).
+- A [Concept and Named Entity Recognition model](https://huggingface.co/Babelscape/cner-base) trained on CNER-silver and on HugginFace🤗 Models (see the [Tutorial Notebook](notebook/CNER_HuggingFace.ipynb)).. Specifically, we fine-tuned a plain DeBERTa-base for token classification model on our dataset.
 
 
-# Pretrained Model on HuggingFace 🤗
-We release a [Concept and Named Entity Recognition model](https://huggingface.co/Babelscape/cner-base) trained on CNER-silver and on HigginFace🤗 Models.
-Specifically, we fine-tuned DeBERTa-base for token classification model on our dataset.
-
-
+# Evaluate CNER models
+Using the official data, it is possible to train a cner model on cner_output.jsonl are the official outputs of our cner system
+To produce CNER results, it is possible to run the following:
+    ```
+    bash test.sh
+    ```
 # Reproduce Paper Results
-The official weights and training scripts used for the paper are not released in this repository and can be released upon request. 
-To produce results for the 10 trained models, run:
+cner_output.jsonl are the official outputs of our cner system
+To produce CNER results, it is possible to run the following:
     ```
     bash test.sh
     ```
     
-    `test.sh` also contains more complex bash for loops that can produce results on multiple datasets / models at once.
 
-<br>
-For a stronger system (DeBERTa + Bi-LSTM + CRF) look at [Reproduce Paper Results](#reproduce-paper-results) Section.
-
-https://user-images.githubusercontent.com/47241515/155128789-9bce46bb-598d-4bda-8f62-db43d47a7dfd.mp4
-
-
-<br>
 
