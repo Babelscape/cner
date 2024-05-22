@@ -29,6 +29,21 @@ This repository contains the evaluation scripts to evaluate CNER models and the 
 - Our silver training and gold evaluation data on [Huggingface](https://huggingface.co/Babelscape/cner).
 - A [Concept and Named Entity Recognition model](https://huggingface.co/Babelscape/cner-base) trained on CNER-silver on the HugginFace🤗 Models hub. Specifically, we fine-tuned a pretrained DeBERTa-v3-base for token classification using the default hyperparameters, optimizer and architecture of huggingface (see the [Tutorial Notebook](CNER_HuggingFace.ipynb)) therefore the results of this model may differ from the ones presented in the paper.
 
+# Setup
+
+1. Clone the repository:
+    ```
+    git clone https://github.com/Babelscape/cner.git
+    ```
+2. Create a conda environment: 
+    ```
+    conda create -n env-name python==3.9
+    ```
+3. Install the requirements:
+    ```
+    pip install -r requirements.txt
+    ```
+
 # Evaluate CNER models
 
 To evaluate a CNER model, run the following script:
