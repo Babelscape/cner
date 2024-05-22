@@ -27,37 +27,36 @@ This work has been published at NAACL 2024 (main conference). If you use any par
 # Description
 This repository contains the evaluation scripts to evaluate CNER models and the official outputs of the CNER system, which can be used to reproduce paper results. We also release:
 - Our silver training and gold evaluation data on [Huggingface](https://huggingface.co/Babelscape/cner).
-- A [Concept and Named Entity Recognition model](https://huggingface.co/Babelscape/cner-base) trained on CNER-silver and on HugginFace🤗 Models (see the [Tutorial Notebook](CNER_HuggingFace.ipynb)). Specifically, we fine-tuned a plain DeBERTa-base for token classification model on our dataset.
-
+- A [Concept and Named Entity Recognition model](https://huggingface.co/Babelscape/cner-base) trained on CNER-silver on the HugginFace🤗 Models hub. Specifically, we fine-tuned a pretrained DeBERTa-v3-base for token classification using the default hyperparameters, optimizer and architecture of huggingface (see the [Tutorial Notebook](CNER_HuggingFace.ipynb)) therefore the results of this model may differ from the ones presented in the paper.
 
 # Evaluate CNER models
-Using the official data, it is possible to train a cner model on CNER-silver.
 
-To evaluate a CNER model, it is possible to run the following:
+To evaluate a CNER model, run the following script:
     ```
     python scripts/evaluate.py --predictions_path path_to_predictions
     ```
     
-where `path_to_predictions` is a file with CNER prediction over the cner-gold dataset split.
+where `path_to_predictions` is a file with CNER predictions over the CNER-gold dataset split.
 
-Supported formats: .jsonl
+Supported formats:
+
+- .jsonl
     ```
-{"sentence_id": "55705165.21", "tokens": ["Commander", ..., "."],  "predictions": ["B-PER", ... , "O"]}
+  {"sentence_id": "55705165.21", "tokens": ["Commander", ..., "."],  "predictions": ["B-PER", ... , "O"]}
     ```
     
-Supported formats: .tsv
+- .tsv
 
-| Sentence_id | Tokens | predictions |
-| ------------- | ------------- | ------------- |
-| "55705165.21"	| ['Commander', 'Donald', 'S.', ... '.'] | ['B-PER', 'I-PER', ... 'O'] |
+  | Sentence_id | Tokens | predictions |
+  | ------------- | ------------- | ------------- |
+  | "55705165.21"	| ['Commander', 'Donald', 'S.', ... '.'] | ['B-PER', 'I-PER', ... 'O'] |
 
 
 # Reproduce Paper Results
-cner_output.jsonl are the official outputs of our cner system
-To produce CNER results, it is possible to run the following:
+At `outputs/cner_output.jsonl` you can find the official outputs of our CNER system.
+To reproduce our CNER results, run the following script:
     ```
     python scripts/evaluate.py --predictions_path outputs/cner_output.jsonl
     ```
     
-
 
