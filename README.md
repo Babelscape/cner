@@ -11,7 +11,7 @@
 </div>
 
 
-This is the official repository for [*CNER: Concept and Named Entity Recognition*](https://aclanthology.org/2024.eacl-long.135/).  
+This is the official repository for [*CNER: Concept and Named Entity Recognition*]([https://aclanthology.org/2024.eacl-long.135/](https://aclanthology.org/2024.naacl-long.461/)).  
 
 ## Citation
 This work has been published at NAACL 2024 (main conference). If you use any part, please consider citing our paper as follows:
