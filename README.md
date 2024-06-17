@@ -17,12 +17,23 @@ This is the official repository for [*CNER: Concept and Named Entity Recognition
 This work has been published at NAACL 2024 (main conference). If you use any part, please consider citing our paper as follows:
 ```bibtex
 @inproceedings{martinelli-etal-2024-cner,
-    title = "CNER: Concept and Named Entity Recognition",
-    author = "Martinelli, Giuliano and
+    title = "{CNER}: Concept and Named Entity Recognition",
+    author = "Martinelli, Giuliano  and
       Molfese, Francesco  and
       Tedeschi, Simone  and
-      Fernàndez-Castro, Alberte  and
-      Navigli, Roberto",}
+      Fern{\'a}ndez-Castro, Alberte  and
+      Navigli, Roberto",
+    editor = "Duh, Kevin  and
+      Gomez, Helena  and
+      Bethard, Steven",
+    booktitle = "Proceedings of the 2024 Conference of the North American Chapter of the Association for Computational Linguistics: Human Language Technologies (Volume 1: Long Papers)",
+    month = jun,
+    year = "2024",
+    address = "Mexico City, Mexico",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2024.naacl-long.461",
+    pages = "8329--8344",
+}
 ```
 # Description
 This repository contains the evaluation scripts to evaluate CNER models and the official outputs of the CNER system, which can be used to reproduce paper results. We also release:
