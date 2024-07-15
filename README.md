@@ -37,7 +37,7 @@ This work has been published at NAACL 2024 (main conference). If you use any par
 ```
 # Description
 This repository contains the evaluation scripts to evaluate CNER models and the official outputs of the CNER system, which can be used to reproduce paper results. We also release:
-- Our silver training and gold evaluation data on [Hugging Face](https://huggingface.co/Babelscape/cner).
+- Our silver training and gold evaluation data on [Hugging Face](https://huggingface.co/datasets/Babelscape/cner).
 - A [Concept and Named Entity Recognition model](https://huggingface.co/Babelscape/cner-base) trained on CNER-silver on the Hugging Face🤗 Models hub. Specifically, we fine-tuned a pretrained DeBERTa-v3-base for token classification using the default hyperparameters, optimizer and architecture of Hugging Face (see the [Tutorial Notebook](CNER_HuggingFace.ipynb)), therefore the results of this model may differ from the ones presented in the paper.
 
 # Setup
